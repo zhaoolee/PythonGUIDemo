@@ -2,42 +2,42 @@
 这可能是最好玩的python GUI入门实例!
 > ![image.png](http://upload-images.jianshu.io/upload_images/3203841-d2c41b0319a26c49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###简单的说,GUI编程就是给程序加上图形化界面.
+### 简单的说,GUI编程就是给程序加上图形化界面.
 >python的脚本开发简单,有时候只需几行代码就能实现丰富的功能,而且python本身是跨平台的,所以深受程序员的喜爱.
 
-###如果给程序加一个图形化界面,那么普通的用户也就能用上python的脚本,极大提升工作效率,所以给python程序加上图形化界面,把自己写的脚本,提供给普通用户,的确是一件激动人心的事!
+### 如果给程序加一个图形化界面,那么普通的用户也就能用上python的脚本,极大提升工作效率,所以给python程序加上图形化界面,把自己写的脚本,提供给普通用户,的确是一件激动人心的事!
 
 ---
 
 
-##如何给python脚本加图形化界面?
-#####作者首先考虑了通过浏览器运行python的图形化界面,为了理想的效果,python需要借助javascript实现一些功能,而且python需要额外安装pyv8模块,我折腾了一下,发现pyv8模块安装很麻烦,而且依赖的库很多,编译安装也根据不同的操作系统,存在各种坑,pyv8不适合普通用户,于是就暂时搁置了pyv8模块.
+## 如何给python脚本加图形化界面?
+##### 作者首先考虑了通过浏览器运行python的图形化界面,为了理想的效果,python需要借助javascript实现一些功能,而且python需要额外安装pyv8模块,我折腾了一下,发现pyv8模块安装很麻烦,而且依赖的库很多,编译安装也根据不同的操作系统,存在各种坑,pyv8不适合普通用户,于是就暂时搁置了pyv8模块.
 
 ![软件界面](http://upload-images.jianshu.io/upload_images/3203841-4d125e0b232d8421.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-#####随后我又比较了pyqt5与tkinter两个模块:
+##### 随后我又比较了pyqt5与tkinter两个模块:
 
-#####pyqt5功能很强,界面也漂亮,但语法比较复杂,pyqt5模块需要单独安装,不适合新手入门;
+##### pyqt5功能很强,界面也漂亮,但语法比较复杂,pyqt5模块需要单独安装,不适合新手入门;
 
-#####tkinter是python3自带的模块,能满足基本的功能需求,语法也简单,基本上5分钟就能上手,所以最终选择了tkinter.
-
-
-##网上当前的python GUI教程存在的问题:
-####1.功能太简单,基本功能就是"花式"显示"Hello World";
-
-####2.注释不明了,复制粘贴别人写的博客代码,代码残缺
-
-####3.版本老旧,都是针对python2.7的程序,导入方式如 `import Tkinter`,python3应为`import tkinter`
-
-###这次作者选择了一个 "根据ip地址定位地理位置"的脚本,作为本次教程的素材,比较好玩,也比较容易实现:
+##### tkinter是python3自带的模块,能满足基本的功能需求,语法也简单,基本上5分钟就能上手,所以最终选择了tkinter.
 
 
+## 网上当前的python GUI教程存在的问题:
+#### 1.功能太简单,基本功能就是"花式"显示"Hello World";
+
+#### 2.注释不明了,复制粘贴别人写的博客代码,代码残缺
+
+#### 3.版本老旧,都是针对python2.7的程序,导入方式如 `import Tkinter`,python3应为`import tkinter`
+
+### 这次作者选择了一个 "根据ip地址定位地理位置"的脚本,作为本次教程的素材,比较好玩,也比较容易实现:
 
 
 
 
-##解释的内容都放到了注释里,上代码:
+
+
+## 解释的内容都放到了注释里,上代码:
 
 
 
@@ -121,12 +121,12 @@ if __name__ == "__main__":
 
 
 
-![一张很有尺寸的演示图!](http://upload-images.jianshu.io/upload_images/3203841-53e9b6e7b63c6de0.gif?imageMogr2/auto-orient/strip)
+> ![一张很有尺寸的演示图!](http://upload-images.jianshu.io/upload_images/3203841-53e9b6e7b63c6de0.gif?imageMogr2/auto-orient/strip)
 
 
 
 
->由于离线查询ip需要全球IP的分布数据，所以我直接选择了一个免费离线查询ip的数据包,为了读取这个包的数据还需要安装一个模块：`pip install pygeoip`,极少数人的当年安装python3的时候,选了不含tkinter的python3安装包,为了学习,还是要把这个模块补上:`pip install tkinter`
+> 由于离线查询ip需要全球IP的分布数据，所以我直接选择了一个免费离线查询ip的数据包,为了读取这个包的数据还需要安装一个模块：`pip install pygeoip`,极少数人的当年安装python3的时候,选了不含tkinter的python3安装包,为了学习,还是要把这个模块补上:`pip install tkinter`
 
 --- 9月27日更新----
 > 如果想将示例程序转为windows下的可执行文件(.exe),参考这篇http://www.jianshu.com/p/64cb9108a7c6
